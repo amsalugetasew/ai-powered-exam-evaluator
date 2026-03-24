@@ -1,0 +1,35 @@
+{
+  "name": "ai-powered-exam-evaluator",
+  "version": "1.0.0",
+  "description": "AI-powered web application for evaluating student exam answers",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "client": "vite --port 3000",
+    "server": "node server/server.js",
+    "dev": "concurrently \"npm run server:dev\" \"npm run client\"",
+    "server:dev": "nodemon server/server.js",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "axios": "^1.13.5",
+    "concurrently": "^9.1.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mammoth": "^1.8.0",
+    "multer": "^2.1.1",
+    "openai": "^4.86.1",
+    "pdf-parse": "^1.1.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.21",
+    "nodemon": "^3.1.9",
+    "postcss": "^8.5.2",
+    "tailwindcss": "^3.4.17",
+    "vite": "^6.2.6"
+  }
+}
