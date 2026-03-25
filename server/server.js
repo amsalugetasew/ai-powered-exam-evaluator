@@ -41,7 +41,8 @@ if (process.env.NODE_ENV === 'production') {
 
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
-  if (!process.env.OPENAI_API_KEY) {
-    console.warn('⚠️  OPENAI_API_KEY is not set. Evaluation will fail until it is configured in .env');
+  const apiKey = (process.env.OPENAI_API_KEY || '').trim().toLowerCase();
+  if (!apiKey || apiKey === 'your_openai_api_key_here' || apiKey === 'your_openai_key_here') {
+    console.warn('OPENAI_API_KEY is missing or placeholder. Evaluation will fail until it is configured in .env');
   }
 });
