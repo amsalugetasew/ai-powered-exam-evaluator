@@ -6,6 +6,17 @@ const { OpenAI } = require('openai');
 
 const router = express.Router();
 
+function getConfiguredApiKey() {
+  const key = (process.env.OPENAI_API_KEY || '').trim();
+  const lower = key.toLowerCase();
+
+  if (!key || lower === 'your_openai_api_key_here' || lower === 'your_openai_key_here') {
+    throw new Error('OPENAI_API_KEY is missing or still set to a placeholder. Add a valid key in your .env file.');
+  }
+
+  return key;
+}
+
 const ALLOWED_MIME_TYPES = [
   'application/pdf',
   'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
@@ -41,13 +52,7 @@ async function extractTextFromFile(file) {
 }
 
 async function evaluateWithAI(question, correctAnswer, studentAnswer) {
-  if (!process.env.OPENAI_API_KEY) {
-    throw new Error(
-      'OPENAI_API_KEY is not configured. Please add it to your .env file.'
-    );
-  }
-
-  const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
+  const openai = new OpenAI({ apiKey: getConfiguredApiKey() });
 
   const userPrompt = [
     `Question: ${question}`,
@@ -62,19 +67,36 @@ async function evaluateWithAI(question, correctAnswer, studentAnswer) {
     `- "suggestions": array of strings with specific improvement tips`,
   ].join('\n');
 
-  const response = await openai.chat.completions.create({
-    model: 'gpt-4o-mini',
-    messages: [
-      {
-        role: 'system',
-        content:
-          'You are an expert exam evaluator. Be fair, specific, and constructive. Always respond with valid JSON only.',
-      },
-      { role: 'user', content: userPrompt },
-    ],
-    response_format: { type: 'json_object' },
-    temperature: 0.3,
-  });
+  let response;
+  try {
+    response = await openai.chat.completions.create({
+      model: 'gpt-4o-mini',
+      messages: [
+        {
+          role: 'system',
+          content:
+            'You are an expert exam evaluator. Be fair, specific, and constructive. Always respond with valid JSON only.',
+        },
+        { role: 'user', content: userPrompt },
+      ],
+      response_format: { type: 'json_object' },
+      temperature: 0.3,
+    });
+  } catch (error) {
+    if (error.status === 401) {
+      throw new Error('Invalid OPENAI_API_KEY. Update your .env with a valid OpenAI API key and restart the server.');
+    }
+
+    if (error.status === 429) {
+      throw new Error('OpenAI quota exceeded. Check your OpenAI billing, usage limits, and project quota, then try again.');
+    }
+
+    if (error.status === 403) {
+      throw new Error('OpenAI request was forbidden. Verify this API key has access to the requested model and project.');
+    }
+
+    throw error;
+  }
 
   const raw = response.choices[0].message.content;
   const result = JSON.parse(raw);
