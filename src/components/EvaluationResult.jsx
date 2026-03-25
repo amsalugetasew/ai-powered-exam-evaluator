@@ -69,7 +69,7 @@ function ScoreCircle({ score }) {
 function EvaluationResult({ result, onReset }) {
   if (!result) return null;
 
-  const { score, feedback, suggestions = [] } = result;
+  const { score, feedback, suggestions = [], questionBreakdown = [] } = result;
 
   return (
     <div className="bg-white border border-gray-200 rounded-xl shadow-sm p-6 space-y-6">
@@ -91,6 +91,27 @@ function EvaluationResult({ result, onReset }) {
         <h3 className="text-sm font-semibold text-gray-700 mb-2">💡 Feedback</h3>
         <p className="text-sm text-gray-600 leading-relaxed">{feedback}</p>
       </div>
+
+      {questionBreakdown.length > 0 && (
+        <div className="bg-emerald-50 rounded-lg p-4">
+          <h3 className="text-sm font-semibold text-emerald-900 mb-3">
+            🧾 Per Question Percentage & Reason
+          </h3>
+          <div className="space-y-3">
+            {questionBreakdown.map((item, idx) => (
+              <div key={idx} className="bg-white border border-emerald-100 rounded-lg p-3">
+                <div className="flex items-start justify-between gap-3">
+                  <p className="text-sm font-semibold text-gray-800">Q{idx + 1}: {item.question}</p>
+                  <span className="text-sm font-bold text-emerald-700 whitespace-nowrap">
+                    {item.percentage}%
+                  </span>
+                </div>
+                <p className="text-sm text-gray-600 mt-2">{item.why}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
 
       {suggestions.length > 0 && (
         <div className="bg-indigo-50 rounded-lg p-4">

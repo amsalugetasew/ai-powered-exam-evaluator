@@ -65,6 +65,12 @@ async function evaluateWithAI(question, correctAnswer, studentAnswer) {
     `- "score": integer 0–100`,
     `- "feedback": string with detailed, constructive feedback`,
     `- "suggestions": array of strings with specific improvement tips`,
+    `- "questionBreakdown": array of objects where each object includes:`,
+    `   - "question": short question text`,
+    `   - "percentage": integer 0-100 for that specific question`,
+    `   - "why": short explanation of why that percentage was given`,
+    `If the input contains multiple questions, return one "questionBreakdown" item per question.`,
+    `If there is only one question, return one item in "questionBreakdown".`,
   ].join('\n');
 
   let response;
@@ -110,6 +116,34 @@ async function evaluateWithAI(question, correctAnswer, studentAnswer) {
   }
 
   result.score = Math.max(0, Math.min(100, Math.round(result.score)));
+  result.questionBreakdown = Array.isArray(result.questionBreakdown)
+    ? result.questionBreakdown
+        .map((item) => {
+          const percentage = Number(item?.percentage);
+          if (!Number.isFinite(percentage)) return null;
+
+          return {
+            question: typeof item?.question === 'string' ? item.question : 'Question',
+            percentage: Math.max(0, Math.min(100, Math.round(percentage))),
+            why:
+              typeof item?.why === 'string' && item.why.trim()
+                ? item.why
+                : 'The response quality for this question is reflected in the score.',
+          };
+        })
+        .filter(Boolean)
+    : [];
+
+  if (result.questionBreakdown.length === 0) {
+    result.questionBreakdown = [
+      {
+        question: 'Question',
+        percentage: result.score,
+        why: 'Single-answer evaluation based on correctness, completeness, and clarity.',
+      },
+    ];
+  }
+
   return result;
 }
 
