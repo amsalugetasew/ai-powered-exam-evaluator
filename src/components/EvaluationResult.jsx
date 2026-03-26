@@ -75,12 +75,14 @@ function EvaluationResult({ result, onReset }) {
     <div className="bg-white border border-gray-200 rounded-xl shadow-sm p-6 space-y-6">
       <div className="flex items-center justify-between">
         <h2 className="text-lg font-bold text-gray-800">📊 Evaluation Result</h2>
-        <button
-          onClick={onReset}
-          className="text-sm text-indigo-600 hover:text-indigo-800 font-medium"
-        >
-          ← New Evaluation
-        </button>
+        {onReset && (
+          <button
+            onClick={onReset}
+            className="text-sm text-indigo-600 hover:text-indigo-800 font-medium"
+          >
+            ← New Evaluation
+          </button>
+        )}
       </div>
 
       <div className="flex flex-col items-center py-4">

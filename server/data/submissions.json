@@ -1,0 +1,140 @@
+[
+  {
+    "id": "submission_9a39405d-0059-499b-8fb8-7abf01fbc97e",
+    "examId": "exam_3591963f-0e6c-4e49-9747-9940b938ba86",
+    "studentId": "user_fbcb6147-c7a5-4d5a-826a-fa5f9cf099f8",
+    "answer": "Plants use sunlight to make food and release oxygen.",
+    "score": 70,
+    "feedback": "Your answer captures the essence of photosynthesis by mentioning that plants use sunlight to make food and release oxygen. However, it lacks specificity regarding the inputs (carbon dioxide and water) and the outputs (glucose and oxygen) of the process. Including these details would demonstrate a more comprehensive understanding of photosynthesis.",
+    "suggestions": [
+      "Include the specific inputs and outputs of photosynthesis.",
+      "Define what 'food' refers to in the context of photosynthesis (i.e., glucose).",
+      "Mention the role of chlorophyll in the process."
+    ],
+    "questionBreakdown": [
+      {
+        "question": "Define photosynthesis.",
+        "percentage": 70,
+        "why": "The answer correctly identifies the use of sunlight and the production of oxygen, but it omits key details about the process, such as the conversion of carbon dioxide and water into glucose."
+      }
+    ],
+    "evaluatedAt": "2026-03-25T11:50:20.706Z"
+  },
+  {
+    "id": "submission_3a595f4b-53bd-4cdf-8eca-2ba186df4686",
+    "examId": "exam_e5cac291-0439-43d6-801b-18380eb3bd3a",
+    "studentId": "user_fbcb6147-c7a5-4d5a-826a-fa5f9cf099f8",
+    "answer": "Photosynthesis is the process by which green plants use sunlight, carbon dioxide, and water to produce glucose and oxygen. This process occurs in the chloroplasts using chlorophyll.",
+    "score": 100,
+    "feedback": "Excellent job! Your answer is identical to the correct answer, demonstrating a clear understanding of the process of photosynthesis. You have accurately described the inputs, outputs, and the location of the process within the plant cell.",
+    "suggestions": [],
+    "questionBreakdown": [
+      {
+        "question": "What is photosynthesis?",
+        "percentage": 100,
+        "why": "The student's answer perfectly matches the correct answer, showing complete understanding of the concept."
+      }
+    ],
+    "evaluatedAt": "2026-03-25T11:50:34.580Z"
+  },
+  {
+    "id": "submission_69ba8b72-4902-4e59-a541-af7f787b5b78",
+    "examId": "exam_c1a50aef-ff49-4142-b230-c42321a4a740",
+    "studentId": "user_fbcb6147-c7a5-4d5a-826a-fa5f9cf099f8",
+    "answer": "1. Artificial Intelligence (AI) is the simulation of human intelligence in machines that are programmed to think, learn, and make decisions. It includes areas like machine learning, natural language processing, and robotics.\n2. Addis Ababa is the capital of Ethiopia.\n3. Plants use sunlight to make food and release oxygen.\n4. x = 5\n5. A noun is a word that names a person, place, thing, or idea. Examples include \"teacher\" and \"city\".",
+    "score": 85,
+    "feedback": "Your answers demonstrate a solid understanding of the concepts. However, some responses could be more detailed, particularly in the explanation of photosynthesis. Additionally, while your solution to the equation is correct, the steps leading to it were not clearly shown.",
+    "suggestions": [
+      "Provide more detail in your explanation of photosynthesis, including the role of chlorophyll and the overall equation.",
+      "Clearly show your working steps when solving equations to enhance clarity.",
+      "Ensure that all parts of the question are fully addressed, even if they seem straightforward."
+    ],
+    "questionBreakdown": [
+      {
+        "question": "What is Artificial Intelligence?",
+        "percentage": 100,
+        "why": "Your answer is comprehensive and accurately defines AI, including its key components."
+      },
+      {
+        "question": "What is the capital city of Ethiopia?",
+        "percentage": 100,
+        "why": "Your answer is correct and clearly states the capital city."
+      },
+      {
+        "question": "Explain the process of photosynthesis.",
+        "percentage": 70,
+        "why": "Your answer captures the essence of photosynthesis but lacks detail regarding the inputs and the overall process."
+      },
+      {
+        "question": "Solve: 2x + 5 = 15",
+        "percentage": 80,
+        "why": "You provided the correct answer, but the steps to arrive at that answer were not clearly articulated."
+      },
+      {
+        "question": "What is a noun? Give two examples.",
+        "percentage": 100,
+        "why": "Your definition of a noun is accurate, and your examples are appropriate."
+      }
+    ],
+    "evaluatedAt": "2026-03-25T12:09:14.226Z"
+  },
+  {
+    "id": "submission_a2aa1997-0b8a-4379-8d5c-6e31a6258cf4",
+    "examId": "exam_3591963f-0e6c-4e49-9747-9940b938ba86",
+    "studentId": "user_bbd08847-ff84-409a-8b51-94e55cff427a",
+    "answer": "Photosynthesis is the process by which green plants use sunlight, carbon dioxide, and water to produce glucose and oxygen. This process occurs in the chloroplasts using chlorophyll.",
+    "score": 95,
+    "feedback": "Your answer accurately describes the process of photosynthesis, including the essential components such as sunlight, carbon dioxide, water, glucose, and oxygen. You also correctly mentioned the role of chloroplasts and chlorophyll, which adds depth to your explanation. However, you could enhance your answer by briefly mentioning the importance of photosynthesis in the ecosystem or its role in producing energy for the plant.",
+    "suggestions": [
+      "Include the significance of photosynthesis in the ecosystem.",
+      "Explain the role of chlorophyll in more detail.",
+      "Consider mentioning the overall importance of glucose for the plant's energy needs."
+    ],
+    "questionBreakdown": [
+      {
+        "question": "Define photosynthesis.",
+        "percentage": 95,
+        "why": "The student provided a comprehensive definition that included all key elements of the process, with only minor areas for improvement."
+      }
+    ],
+    "evaluatedAt": "2026-03-26T05:09:23.774Z"
+  },
+  {
+    "id": "submission_1de49e45-401a-493d-96ef-f3ba7c6e9be8",
+    "examId": "exam_e5cac291-0439-43d6-801b-18380eb3bd3a",
+    "studentId": "user_bbd08847-ff84-409a-8b51-94e55cff427a",
+    "answer": "Plants use sunlight to make food and release oxygen.",
+    "score": 50,
+    "feedback": "Your answer captures the essence of photosynthesis by mentioning that plants use sunlight to make food and release oxygen. However, it lacks specific details such as the role of carbon dioxide and water, the production of glucose, and the location of the process in chloroplasts. Including these elements would provide a more complete understanding of photosynthesis.",
+    "suggestions": [
+      "Include the reactants of photosynthesis: carbon dioxide and water.",
+      "Mention the products of photosynthesis: glucose and oxygen.",
+      "Specify that the process occurs in chloroplasts and involves chlorophyll."
+    ],
+    "questionBreakdown": [
+      {
+        "question": "What is photosynthesis?",
+        "percentage": 50,
+        "why": "The student provided a simplified explanation but omitted key components such as carbon dioxide, water, glucose, and the specific location of the process."
+      }
+    ],
+    "evaluatedAt": "2026-03-26T05:10:13.822Z"
+  },
+  {
+    "id": "submission_4d28d0e5-2510-4577-96c2-31ff9f9e5014",
+    "examId": "exam_c1a50aef-ff49-4142-b230-c42321a4a740",
+    "studentId": "user_bbd08847-ff84-409a-8b51-94e55cff427a",
+    "answer": "Solve: \n2\n𝑥\n+\n5\n=\n15\n2x+5=15\n\nCorrect Answer:\n\n2\n𝑥\n+\n5\n=\n15\n2x+5=15\n\n2\n𝑥\n=\n10\n2x=10\n\n𝑥\n=\n5\nx=5",
+    "score": 100,
+    "feedback": "Excellent job! You correctly solved the equation step by step, demonstrating a clear understanding of the algebraic process involved. Your presentation of the solution was clear and accurate.",
+    "suggestions": [],
+    "questionBreakdown": [
+      {
+        "question": "Solve: 2x + 5 = 15",
+        "percentage": 100,
+        "why": "The student correctly solved the equation by isolating x and provided the correct final answer."
+      }
+    ],
+    "evaluatedAt": "2026-03-26T05:12:07.657Z"
+  }
+]

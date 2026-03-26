@@ -1,0 +1,22 @@
+[
+  {
+    "token": "6e408d90-772f-4599-9f02-9a077c834d74",
+    "userId": "user_fe873481-b1c5-4e17-8731-e510f87f9ec8",
+    "createdAt": "2026-03-25T11:43:47.774Z"
+  },
+  {
+    "token": "c1615533-f1e2-4cea-9331-fb9f706db3cf",
+    "userId": "user_75fcaee5-27fb-4e49-9070-24a279cbeb3a",
+    "createdAt": "2026-03-25T11:43:48.345Z"
+  },
+  {
+    "token": "28ca2426-ede3-4b7e-ab8f-695fe2986170",
+    "userId": "user_57bbceaa-f84e-4c3b-87e6-358fdf8bc8a5",
+    "createdAt": "2026-03-25T11:43:48.630Z"
+  },
+  {
+    "token": "381cb476-64b3-49d0-8d93-c8a6299438a7",
+    "userId": "user_bbd08847-ff84-409a-8b51-94e55cff427a",
+    "createdAt": "2026-03-26T05:03:23.904Z"
+  }
+]

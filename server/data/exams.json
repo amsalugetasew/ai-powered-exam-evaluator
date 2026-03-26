@@ -1,0 +1,26 @@
+[
+  {
+    "id": "exam_3591963f-0e6c-4e49-9747-9940b938ba86",
+    "title": "Sample Exam",
+    "question": "Define photosynthesis.",
+    "correctAnswer": "Photosynthesis is the process by which green plants use sunlight to convert carbon dioxide and water into glucose and oxygen.",
+    "instructorId": "user_75fcaee5-27fb-4e49-9070-24a279cbeb3a",
+    "createdAt": "2026-03-25T11:43:48.478Z"
+  },
+  {
+    "id": "exam_e5cac291-0439-43d6-801b-18380eb3bd3a",
+    "title": "Photosynthesis.",
+    "question": "Photosynthesis is the process by which green plants use sunlight, carbon dioxide, and water to produce glucose and oxygen. This process occurs in the chloroplasts using chlorophyll.",
+    "correctAnswer": "Photosynthesis is the process by which green plants use sunlight, carbon dioxide, and water to produce glucose and oxygen. This process occurs in the chloroplasts using chlorophyll.",
+    "instructorId": "user_bf7e5584-1d02-4b8a-b9b8-ee20b6bfc5ca",
+    "createdAt": "2026-03-25T11:48:18.548Z"
+  },
+  {
+    "id": "exam_c1a50aef-ff49-4142-b230-c42321a4a740",
+    "title": "General Knowlged Mid Exam",
+    "question": "Questions\n\n1. What is Artificial Intelligence?\n\n2. What is the capital city of Ethiopia?\n\n3. Explain the process of photosynthesis.\n\n4. Solve: 2x + 5 = 15\n\n5. What is a noun? Give two examples.",
+    "correctAnswer": "Correct Answers\n\n1. Artificial Intelligence (AI) is the simulation of human intelligence in machines that are programmed to think, learn, and make decisions. It includes areas like machine learning, natural language processing, and robotics.\n\n2. The capital city of Ethiopia is Addis Ababa.\n\n3. Photosynthesis is the process by which green plants use sunlight, carbon dioxide, and water to produce glucose and oxygen. This process occurs in the chloroplasts using chlorophyll.\n\n4. 2x + 5 = 152x = 10x = 5\n\n5. A noun is a word that names a person, place, thing, or idea. Examples include 'teacher' and 'city'.",
+    "instructorId": "user_bf7e5584-1d02-4b8a-b9b8-ee20b6bfc5ca",
+    "createdAt": "2026-03-25T12:03:39.580Z"
+  }
+]

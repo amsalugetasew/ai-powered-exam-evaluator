@@ -1,0 +1,56 @@
+[
+  {
+    "id": "user_fe873481-b1c5-4e17-8731-e510f87f9ec8",
+    "name": "System Administrator",
+    "username": "admin",
+    "passwordHash": "7a37705595b6f5891c94c64816fd687a:92dbceac291fa638bbe1f5ce0bfb872413060978b5c1a4a822e386aa6378fd7a4124a5c47641f93fa01e4118d1f020ea4599764b26f68026a168721c80e6d516",
+    "role": "admin",
+    "createdAt": "2026-03-25T11:42:44.538Z",
+    "createdBy": "system"
+  },
+  {
+    "id": "user_75fcaee5-27fb-4e49-9070-24a279cbeb3a",
+    "name": "Jane Instructor",
+    "username": "jane.instructor",
+    "passwordHash": "84203b5480830158c194cadf03ba64c6:103c067ee6436b2b6b12c614f4c4e34762452a62574f8a198fecc95e2d9a92e1fb5df5a4e3bf4280c50f48ff40b0a97808ae87aa327e65e2bca3295e06e03ab0",
+    "role": "instructor",
+    "createdAt": "2026-03-25T11:43:48.070Z",
+    "createdBy": "user_fe873481-b1c5-4e17-8731-e510f87f9ec8"
+  },
+  {
+    "id": "user_57bbceaa-f84e-4c3b-87e6-358fdf8bc8a5",
+    "name": "Sam Student",
+    "username": "sam.student",
+    "passwordHash": "c0c28b6f78411b0dc7acca8574b6d56e:68697a54673424e6900321d1f18bd1d0dea2aa4604c99340b31b22d8a3f5abace5e17a8bb65d8e56aeafb6cbab620f25e87aefa4f26768272506248b726e7dab",
+    "role": "student",
+    "createdAt": "2026-03-25T11:43:48.212Z",
+    "createdBy": "user_fe873481-b1c5-4e17-8731-e510f87f9ec8"
+  },
+  {
+    "id": "user_bf7e5584-1d02-4b8a-b9b8-ee20b6bfc5ca",
+    "name": "Getasew Amsalu",
+    "username": "instructor",
+    "passwordHash": "261d8b6a97fe3a658aa3199936280c45:3b99c30981705acbb8d18778c35cfa880a1f160d694d5eee85f9dcaae77fee9046422d889d860a03193463593e79b36afe045433af0d64bad29b6bfc912250c8",
+    "role": "instructor",
+    "createdAt": "2026-03-25T11:46:11.022Z",
+    "createdBy": "user_fe873481-b1c5-4e17-8731-e510f87f9ec8"
+  },
+  {
+    "id": "user_fbcb6147-c7a5-4d5a-826a-fa5f9cf099f8",
+    "name": "Getasew Amsalu",
+    "username": "student",
+    "passwordHash": "46054e5182d5de04cb7b553139f80637:28b378ff1224ff35473f3acc78f5da0480938f6390f614763c505eb297f8af88c88d49f4f316a364b20622727aa09b9085dd986fd0e1765c26d4890d9cff9aa7",
+    "role": "student",
+    "createdAt": "2026-03-25T11:49:20.314Z",
+    "createdBy": "user_fe873481-b1c5-4e17-8731-e510f87f9ec8"
+  },
+  {
+    "id": "user_bbd08847-ff84-409a-8b51-94e55cff427a",
+    "name": "Meskerem Abebe",
+    "username": "meskerem",
+    "passwordHash": "a1584a82e1b9e59ce69239d9c5fea653:6b40bd8e48f6f655867469ef56ce81a91ac5b55e612add92d56c220da3eb0755197849b6c3076bf2f4436ce5a402fc85855d31955ce1da801f77fcaebab6a1a0",
+    "role": "student",
+    "createdAt": "2026-03-26T05:03:03.409Z",
+    "createdBy": "user_fe873481-b1c5-4e17-8731-e510f87f9ec8"
+  }
+]

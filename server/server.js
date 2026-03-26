@@ -4,10 +4,18 @@ const cors = require('cors');
 const path = require('path');
 const rateLimit = require('express-rate-limit');
 
+const { ensureDefaultAdmin } = require('./lib/auth');
+const { initializeDataFiles } = require('./lib/store');
+const authRouter = require('./routes/auth');
 const evaluateRouter = require('./routes/evaluate');
+const examRouter = require('./routes/exams');
+const usersRouter = require('./routes/users');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
+
+initializeDataFiles();
+ensureDefaultAdmin();
 
 const generalLimiter = rateLimit({
   windowMs: 15 * 60 * 1000,
@@ -30,6 +38,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(generalLimiter);
 
+app.use('/auth', authRouter);
+app.use('/users', usersRouter);
+app.use('/exams', examRouter);
 app.use('/evaluate', evaluateLimiter, evaluateRouter);
 
 if (process.env.NODE_ENV === 'production') {
@@ -45,4 +56,6 @@ app.listen(PORT, () => {
   if (!apiKey || apiKey === 'your_openai_api_key_here' || apiKey === 'your_openai_key_here') {
     console.warn('OPENAI_API_KEY is missing or placeholder. Evaluation will fail until it is configured in .env');
   }
+
+  console.log('Default administrator username:', process.env.ADMIN_DEFAULT_USERNAME || 'admin');
 });
